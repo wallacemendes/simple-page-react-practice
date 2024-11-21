@@ -4,16 +4,26 @@
 
 body {
     margin: 0;
-    background-color: #282D35 ;
 
 
+}
+
+.body-dark{
+    background-color: #282D35;
 }
 
 
 .nav-container{
     display: flex;
-    background-color: #21222A ;
+    background-color: #FFFFFF ;
     padding: 30px 25px;
+    font-family: "Inter", sans-serif;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav-dark{
+    background-color: #21222A;
+
 }
 
 .nav-logo{
@@ -31,17 +41,8 @@ body {
     align-self: center;
 }
 
-.nav-subtitle{
-    margin: 0;
-    font-family: "Inter", sans-serif;
-    color: white;
-    align-self: center;
-    margin-left: auto;
-
-}
 
 .main-title{
-    color: white;
     font-family: "Inter", sans-serif;
     font-weight: bold;
     font-size: 38px;
@@ -49,7 +50,6 @@ body {
 }
 
 .main-list{
-    color: white;
     font-family: "Inter", sans-serif;
     font-size: 16px;
 }
@@ -64,9 +64,75 @@ body {
 }
 
 .main-container{
+    color: #2B283A;
     padding: 30px 30px;
-    background-image: url(/src/assets/reactjs-icon-2.svg);
+    background-image: url(/src/assets/reactjs-icon-light.png);
     background-repeat: no-repeat;;
     background-position: center right -120px;
 }
 
+.main-dark {
+    color: white;
+    background-image: url(/src/assets/reactjs-icon-dark.png);
+
+}
+
+.toggler {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+}
+
+.toggler p {
+    font-size: 0.625rem;
+    font-weight: 600;
+}
+
+.toggler--slider {
+    width: 25px;
+    height: 13px;
+    background-color: #2B283A;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    box-sizing: content-box;
+}
+
+.toggler--slider--circle{
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.nav-dark .toggler--slider--circle {
+    background-color: black;
+}
+
+.toggler--light{
+    color: #2B283A;
+}
+
+.nav-dark .toggler--light {
+    color: #918E9B;
+}
+
+.nav-dark .toggler--slider {
+    justify-content: flex-end;
+    border-color: white;
+    background-color: #F5F5F5;
+}
+
+
+.toggler--dark{
+    color: #D5D4D8;
+}
+
+.nav-dark .toggler-dark {
+    color: #FFFFFF;
+}
